@@ -1,9 +1,10 @@
 from collections import deque
 
-k = int(input())
+n = int(input())
 
 adjs = [[0]*(n+1) for i in range(n+1)]
 visited_bfs = [0]*(n+1)
+group = [0]*(n+1)
 
 def bfs(v, lines):
     visited_bfs[v] = 1
@@ -15,7 +16,8 @@ def bfs(v, lines):
         
         for i in range(1, n+1):
             if (lines[curr][i] == 1) and (visited_bfs[i] == 0):
-                visited_bfs[i] = 1
+                visite
+                d_bfs[i] = 1
                 
                 if group[curr] == 1:
                     group[i] = 0
